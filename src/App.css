@@ -5,3 +5,8 @@
   flex-direction: column;
 }
 
+#player {
+  height: 640px;
+  width: 640px;
+}
+

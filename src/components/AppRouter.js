@@ -21,13 +21,13 @@ function AppRouter() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item active">
-                            <Link to={'/'} className="nav-link"> Filmer </Link>
+                            <Link to={'/'} className="nav-link mr-5"> Filmer </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to={'/about'} className="nav-link"> Om oss </Link>
+                            <Link to={'/about'} className="nav-link mr-5"> Om oss </Link>
                         </li>
                         <li className="nav-item">
-                             <Link to={'/contact'} className="nav-link"> Kontakt </Link>
+                             <Link to={'/contact'} className="nav-link mr-5"> Kontakt </Link>
                         </li>
                     </ul>
                 </div>
