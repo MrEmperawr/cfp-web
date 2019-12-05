@@ -11,16 +11,6 @@ function VideoPlayer({currentVideo}) {
                 allowFullScreen 
                 title="documentary"
             />
-            {/* <Iframe url={currentVideo}
-            width="640px"
-            height="640px"
-            position="absolute"
-            id="myId"
-            className="myClassname"
-            display="initial"
-            position="relative"
-            allowFullScreen
-            /> */}
         </div>
     )
 }
