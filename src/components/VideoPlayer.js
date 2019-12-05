@@ -1,10 +1,18 @@
 import React from 'react'
 
-function VideoPlayer() {
+function VideoPlayer({currentVideo}) {
     return (
-        <div>
-            <video src="https://www.youtube.com/embed/9bZkp7q19f0" type="video/mp4" controls autoPlay height="600"/>
-        </div>
+        <>
+            {console.log(currentVideo)}
+            <iframe 
+                src={currentVideo} 
+                width="640" 
+                height="640"
+                frameborder="0" 
+                allow="autoplay; fullscreen" 
+                allowFullScreen title="movie"
+            />
+        </>
     )
 }
 

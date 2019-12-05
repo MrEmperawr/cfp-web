@@ -10,23 +10,23 @@ import logo from '../assets/WitkowskyMedia_black.svg'
 function AppRouter() {
     return (
         <Router>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">
-                    <img class="navbar-brand" src={logo} alt="Witkowsky Mediga Logo" height="60" width="60"/>
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <a className="navbar-brand" href="#">
+                    <img className="navbar-brand" src={logo} alt="Witkowsky Mediga Logo" height="60" width="60"/>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav ml-auto">
+                        <li className="nav-item active">
                             <Link to={'/'} className="nav-link"> Filmer </Link>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <Link to={'/about'} className="nav-link"> Om oss </Link>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                              <Link to={'/contact'} className="nav-link"> Kontakt </Link>
                         </li>
                     </ul>
