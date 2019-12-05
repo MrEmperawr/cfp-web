@@ -5,30 +5,35 @@ import About from '../pages/About'
 import Contact from '../pages/Contact'
 import Home from '../pages/Home'
 
-import React from 'react'
-
 function AppRouter() {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <image class="navbar-brand" url="../assets/WitkowskyMedia_black.svg">Navbar</image>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <Router>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <image class="navbar-brand" url="../assets/WitkowskyMedia_black.svg">Navbar</image>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <Link to={'/'} className="nav-link"> Filmer </Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link to={'/about'} className="nav-link"> Om oss </Link>
+                        </li>
+                        <li class="nav-item">
+                             <Link to={'/contact'} className="nav-link"> Kontakt </Link>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <Switch>
+                <Route exact path='/' component={Home} />
+                <Route path='/about' component={About} />
+                <Route path='/contact' component={Contact} />
+            </Switch>
+        </Router>
     )
 }
 

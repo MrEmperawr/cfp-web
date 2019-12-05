@@ -1,14 +1,13 @@
 import React from 'react';
 
 import './App.css';
-import NavBar from './components/NavBar'
+import AppRouter from './components/AppRouter'
 import VideoPlayer from './components/VideoPlayer'
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <VideoPlayer />
+      <AppRouter />
     </div>
   );
 }
