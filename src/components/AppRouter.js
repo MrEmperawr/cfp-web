@@ -5,11 +5,15 @@ import About from '../pages/About'
 import Contact from '../pages/Contact'
 import Home from '../pages/Home'
 
+import logo from '../assets/WitkowskyMedia_black.svg'
+
 function AppRouter() {
     return (
         <Router>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <image class="navbar-brand" url="../assets/WitkowskyMedia_black.svg">Navbar</image>
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-brand" src={logo} alt="Witkowsky Mediga Logo" height="60" width="60"/>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
