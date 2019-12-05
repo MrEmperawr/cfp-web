@@ -1,6 +1,6 @@
 export const movies = [
     {
-        name: 'Kan vi göra det själva? En film om Ekonomisk Demokrati', 
+        name: 'Kan vi göra det själva?', 
         uri: 'https://player.vimeo.com/video/97210026', 
         description: "Trailer för Kan vi göra det själva? (2015) som har visats på svensk TV, i Riksdagen och inkluderats i Film For Action's lista 'The Top 100 Documentaries We Can Use To Change The World'."
     }
