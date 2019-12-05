@@ -3,9 +3,7 @@ import React from 'react'
 function VideoPlayer() {
     return (
         <div>
-            <video>
-                 <source src="../assets/defaultvideo.mp4" type="video/mp4" />
-            </video>
+            <video src="https://www.youtube.com/embed/9bZkp7q19f0" type="video/mp4" controls autoPlay/>
         </div>
     )
 }

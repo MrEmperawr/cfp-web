@@ -1,6 +1,13 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
-function Navbar() {
+import About from '../pages/About'
+import Contact from '../pages/Contact'
+import Home from '../pages/Home'
+
+import React from 'react'
+
+function AppRouter() {
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <image class="navbar-brand" url="../assets/WitkowskyMedia_black.svg">Navbar</image>
@@ -25,4 +32,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default AppRouter
