@@ -1,13 +1,15 @@
 import React from 'react'
 
-function MovieCard({name, description, genre, image}) {
+function MovieCard({name, description, genre, image, selectMovieToPlay}) {
     return (
         <div className="card">
-            <img src="img_avatar.png" alt="Avatar" style="width:100%" />
+            <img src={image} alt={name}/>
             <div className="card-container">
-                <h4><b>John Doe</b></h4>
-                <p>Architect & Engineer</p>
+                <h4 onClick={selectMovieToPlay}><b>{name}</b></h4>
+                <p>{description}</p>
+                <p>{genre}</p>
             </div>
+            <i style={{fontSize: 36}} class="fa">&#xf144;</i>
         </div>
     )
 }
