@@ -2,10 +2,11 @@ import React from 'react'
 
 function MovieCard({name, description, genre, image, selectMovieToPlay}) {
     return (
-        <div className="card flex-item bg-dark" style={{width: '20rem', margin: '10px 10px 10px 10px'}}>
-            <div className="card-body" style={{backgroundImage: `url(${image})`}}>
+        <div className="card flex-item bg-dark card-container" style={{width: '20rem', margin: '10px 10px 10px 10px'}}>
+            <div className="card-body">
+                <img src={image} alt="" className="img"/>
                 <h4 className="card-title text-light"><b>{name}</b></h4>
-                <p> </p>
+                <br/>
                 <p className="card-text text-light">{description}</p>
             </div>
             <p className="text-secondary">{genre}</p>

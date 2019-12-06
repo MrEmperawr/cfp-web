@@ -21,7 +21,11 @@
     flex: 0 0 auto;
   }
   
-  /* .background-img {
-    background-image: url('./assets/projekt_framsteg.png');
-  } */
-
+  .card-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 72%;
+    max-width: 100%;
+    opacity: 0.2;
+}

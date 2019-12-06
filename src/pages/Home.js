@@ -26,13 +26,13 @@ function Home() {
         <div style={{display: 'flex', justifyContent: 'center'}}>
             <section style={{width: '75%'}}>
                 <h3 style={{marginBottom: 100, marginTop: 50}}>Vi producerar högkvalitativa informationsfilmer till ett bra pris.</h3>
-                <section style={{display: 'flex', justifyContent: 'center', marginRight: 20}}>
+                <section style={{display: 'flex', justifyContent: 'center', marginRight: 20, marginBottom: 20}}>
                     <VideoPlayer currentVideo={currentVideo}/>
                 </section>
                 <section className="flex-container">
                     {movies.map(movie => 
                         <MovieCard 
-                            image="" 
+                            image={movie.image} 
                             name={movie.name} 
                             description={movie.description} 
                             genre={movie.genre}
