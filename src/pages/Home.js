@@ -34,11 +34,6 @@ function Home() {
                         genre={movie.genre}
                         selectMovieToPlay={selectMovieToPlay}
                     />
-                    // <ul style={{listStyle: 'none', display: 'flex', flexDirection: 'row'}}>
-                    //     <li key={movie.name} onClick={selectMovieToPlay}>
-                    //         {movie.name}
-                    //     </li>
-                    // </ul>
                 )}
             </section>
         </div>
