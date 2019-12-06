@@ -10,10 +10,11 @@ import logo from '../assets/WitkowskyMedia_black.svg'
 function AppRouter() {
     return (
         <Router>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light" style={{background: '#b5b5b5'}}>
                 <a className="navbar-brand" href="#">
-                    <img className="navbar-brand" src={logo} alt="Witkowsky Mediga Logo" height="60" width="60"/>
+                    <img className="navbar-brand" src={logo} alt="Witkowsky Mediga Logo" height="120" width="120"/>
                 </a>
+                <h1><b>Witkowsky Media</b></h1>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

@@ -23,21 +23,24 @@ function Home() {
         randomMovieSelector(movies)
     }, [])
     return (
-        <div>
-            <section style={{display: 'flex', justifyContent: 'center', marginRight: 20}}>
-                <VideoPlayer currentVideo={currentVideo}/>
-            </section>
-            <section style={{display: 'flex', flexFlow: 'wrap', justifyContent: 'center'}}>
-                {movies.map(movie => 
-                    <MovieCard 
-                        image="" 
-                        name={movie.name} 
-                        description={movie.description} 
-                        genre={movie.genre}
-                        selectMovieToPlay={selectMovieToPlay}
-                        key={movie.name}
-                    />
-                )}
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+            <section style={{width: '75%'}}>
+                <h3 style={{marginBottom: 100, marginTop: 50}}>Vi producerar högkvalitativa informationsfilmer till ett bra pris.</h3>
+                <section style={{display: 'flex', justifyContent: 'center', marginRight: 20}}>
+                    <VideoPlayer currentVideo={currentVideo}/>
+                </section>
+                <section style={{display: 'flex', flexFlow: 'wrap', justifyContent: 'center'}}>
+                    {movies.map(movie => 
+                        <MovieCard 
+                            image="" 
+                            name={movie.name} 
+                            description={movie.description} 
+                            genre={movie.genre}
+                            selectMovieToPlay={selectMovieToPlay}
+                            key={movie.name}
+                        />
+                    )}
+                </section>
             </section>
         </div>
     )

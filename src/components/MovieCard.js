@@ -6,6 +6,7 @@ function MovieCard({name, description, genre, image, selectMovieToPlay}) {
             <img src={image} alt="" className="card-img-top"/>
             <div className="card-body">
                 <h4 className="card-title text-light"><b>{name}</b></h4>
+                <p>_</p>
                 <p className="card-text text-light">{description}</p>
             </div>
             <p className="text-secondary">{genre}</p>
