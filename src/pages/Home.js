@@ -15,7 +15,7 @@ function Home() {
         const targetName = event.target.innerText
         const currentMovie = movies
             .find(movie => movie.name === targetName)
-        console.log(currentMovie)
+        console.log(event.target)
         setCurrentVideo(currentMovie.uri)
     }
 
@@ -24,8 +24,10 @@ function Home() {
     }, [])
     return (
         <div>
-            <VideoPlayer currentVideo={currentVideo}/>
-            <section style={{display: 'flex'}}>
+            <section style={{display: 'flex', justifyContent: 'center', marginRight: 20}}>
+                <VideoPlayer currentVideo={currentVideo}/>
+            </section>
+            <section style={{display: 'flex', flexFlow: 'wrap', justifyContent: 'center'}}>
                 {movies.map(movie => 
                     <MovieCard 
                         image="" 
