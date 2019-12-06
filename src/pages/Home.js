@@ -29,7 +29,7 @@ function Home() {
                 <section style={{display: 'flex', justifyContent: 'center', marginRight: 20}}>
                     <VideoPlayer currentVideo={currentVideo}/>
                 </section>
-                <section style={{display: 'flex', flexFlow: 'wrap', justifyContent: 'center'}}>
+                <section className="flex-container">
                     {movies.map(movie => 
                         <MovieCard 
                             image="" 
