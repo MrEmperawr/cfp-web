@@ -12,11 +12,11 @@ function Home() {
         setCurrentVideo(movies[index].uri)
     }
     const selectMovieToPlay = (event) => {
-        const targetName = event.target.innerText
+        const targetName = event.target.id
         const currentMovie = movies
             .find(movie => movie.name === targetName)
-        console.log(event.target)
-        setCurrentVideo(currentMovie.uri)
+        console.log(targetName)
+        if (currentMovie) setCurrentVideo(currentMovie.uri)
     }
 
     useEffect(() => {
@@ -35,6 +35,7 @@ function Home() {
                         description={movie.description} 
                         genre={movie.genre}
                         selectMovieToPlay={selectMovieToPlay}
+                        key={movie.name}
                     />
                 )}
             </section>
